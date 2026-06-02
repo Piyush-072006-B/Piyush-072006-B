@@ -1,23 +1,23 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: COMPLETE REWRITE PASS — DONE. README fully rewritten. Assets deleted.
+> Last updated: UPDATE PASS (7 fixes) — DONE. README.md patched and pushed.
 
 ---
 
 ## ✅ COMPLETED
 
 - `HANDOFF.md` — always current.
-- `README.md` — **COMPLETE REWRITE (v3)**. Ground-up rewrite. All visuals use server-rendered external services only. No local assets. Structure:
-  - Section 1: capsule-render waving header (server-side animated PNG)
-  - Section 1b: readme-typing-svg rotating tagline (server-side animated SVG)
-  - Section 2: Identity prose block (italic, centered, BYTEJAYS style)
-  - Section 3: skillicons.dev icon grid + sub text for unlisted tools
-  - Section 4: BYTEJAYS-style bold-link + tagline + prose for BLING and MoodNest; compact italics line for other repos
-  - Section 5: Fenced code block "Currently" — monospace, no bullets
-  - Section 6: github-readme-stats (transparent theme), streak-stats, activity-graph
-  - Section 7: "On Building" — one paragraph, first-person voice, no header
-  - Section 8: Plain text contact line (email placeholder + LinkedIn placeholder + GitHub)
-  - Section 9: capsule-render waving footer
+- `README.md` — **COMPLETE REWRITE (v3)** + **UPDATE PASS (v3.1)**. All visuals use server-rendered external services only. No local assets.
+  - Section 1: capsule-render — text updated to `Piyush Pal`, desc shortened to `Building at the edge of AI`
+  - Section 1b: readme-typing-svg — 4 new lines: AI/ML Engineer, BTech identity, BLING stat, iOS Developer
+  - Section 2: Identity block — age updated 18 → 20
+  - Section 3: skillicons.dev icon grid (unchanged)
+  - Section 4: Systems — tighter BLING write-up (headline stats bolded, stack line as italic below title, separator `---` between projects, `Also:` for other repos)
+  - Section 5: Currently block — 6 new lines including DSA, Java, hackathons, stealth projects
+  - Section 6: github-readme-stats switched from `theme=transparent` to `theme=tokyonight` + explicit `bg_color=0d1117&text_color=c9d1d9` — fixes broken render on low-activity accounts. `&nbsp;&nbsp;` spacer added between the two cards. Activity graph got `custom_title=Contribution%20Graph` param.
+  - Section 7: "On Building" paragraph (unchanged)
+  - Section 8: Contact placeholders (unchanged — pending Piyush)
+  - Section 9: capsule-render footer (unchanged)
 
 - `assets/banner.svg` — **DELETED**. Replaced by capsule-render URL in README.
 - `assets/stats-card.html` — **DELETED**. Not meaningfully linkable from GitHub README.

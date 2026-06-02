@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=580&height=45&lines=AI+%2F+ML+Engineer+in+the+Making;BTech+CSE+AI%2FML+%E2%80%94+Building+Real+Systems;BLING%3A+100%25+Evasion+Rate+Across+7+Fraud+Families;iOS+Developer+%E2%80%94+Swift+%2B+SwiftUI" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=580&height=45&lines=AI%2FML+Engineer+in+the+Making;B.Tech+CSE+(AI%2FML)+%E2%80%A2+Building+Real+Systems" />
 </p>
 
 ---
@@ -22,7 +22,7 @@
 ## Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,swift,js,docker,kafka,fastapi,react,postgres,redis,git,github,vite,xcode&theme=dark&perline=13" />
+  <img src="https://skillicons.dev/icons?i=python,swift,java,cpp,js,docker,kafka,fastapi,react,postgres,redis,git,github,vite,xcode&theme=dark&perline=15" />
 </p>
 
 <p align="center">
@@ -54,8 +54,13 @@ pattern before it touches production logic.
 **[MoodNest — iOS Mental Wellness Tracker](https://github.com/Piyush-072006-B/MoodNest-7.2F2)**
 *Swift · SwiftUI · iOS · Xcode*
 
-Native iOS app for mood tracking and emotional pattern visualization.
-Built fully in SwiftUI — not a prototype, ships on iOS.
+Native iOS mental wellness app built fully in SwiftUI. Users log daily
+mood entries, track emotional patterns over time, and visualize their
+mental state through a clean, minimal interface. No third-party
+dependencies — pure Swift, pure SwiftUI, built the right way.
+Ships on iOS and was built to solve a real problem:
+most mood apps are either too clinical or too cluttered.
+MoodNest is neither.
 
 ---
 
@@ -79,9 +84,12 @@ Built fully in SwiftUI — not a prototype, ships on iOS.
 ## Signals
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Piyush-072006-B&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&bg_color=0d1117"/>
-  &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Piyush-072006-B&layout=compact&theme=tokyonight&hide_border=true&title_color=a78bfa&text_color=c9d1d9&bg_color=0d1117&langs_count=6&card_width=320"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Piyush-072006-B&theme=github_dark"/>
+</p>
+<p align="center">
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Piyush-072006-B&theme=github_dark"/>
+  &nbsp;
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Piyush-072006-B&theme=github_dark"/>
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Piyush-072006-B&theme=transparent&hide_border=true&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=8b8b9b&dates=8b8b9b&currStreakNum=c4b5fd&sideNums=c4b5fd"/>
@@ -97,7 +105,19 @@ The through-line in what I build is making hidden structure visible — fraud pa
 
 ---
 
-[YOUR_EMAIL_HERE] · [LinkedIn](YOUR_LINKEDIN_URL_HERE) · [github.com/Piyush-072006-B](https://github.com/Piyush-072006-B)
+<p align="center">
+  <a href="mailto:piyush34305@gmail.com">
+    <img src="https://img.shields.io/badge/Email-piyush34305%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0d1117&color=1a1a2e"/>
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/piyush-pal-pp034305">
+    <img src="https://img.shields.io/badge/LinkedIn-Piyush%20Pal-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0d1117&color=1a1a2e"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/Piyush-072006-B">
+    <img src="https://img.shields.io/badge/GitHub-Piyush--072006--B-0d1117?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0d1117&color=1a1a2e"/>
+  </a>
+</p>
 
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:0d1117&height=120&section=footer"/>

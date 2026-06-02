@@ -1,23 +1,20 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: UPDATE PASS (7 fixes) — DONE. README.md patched and pushed.
+> Last updated: 5-FIX PASS — DONE. All placeholders resolved. README complete.
 
 ---
 
 ## ✅ COMPLETED
 
 - `HANDOFF.md` — always current.
-- `README.md` — **COMPLETE REWRITE (v3)** + **UPDATE PASS (v3.1)**. All visuals use server-rendered external services only. No local assets.
-  - Section 1: capsule-render — text updated to `Piyush Pal`, desc shortened to `Building at the edge of AI`
-  - Section 1b: readme-typing-svg — 4 new lines: AI/ML Engineer, BTech identity, BLING stat, iOS Developer
-  - Section 2: Identity block — age updated 18 → 20
-  - Section 3: skillicons.dev icon grid (unchanged)
-  - Section 4: Systems — tighter BLING write-up (headline stats bolded, stack line as italic below title, separator `---` between projects, `Also:` for other repos)
-  - Section 5: Currently block — 6 new lines including DSA, Java, hackathons, stealth projects
-  - Section 6: github-readme-stats switched from `theme=transparent` to `theme=tokyonight` + explicit `bg_color=0d1117&text_color=c9d1d9` — fixes broken render on low-activity accounts. `&nbsp;&nbsp;` spacer added between the two cards. Activity graph got `custom_title=Contribution%20Graph` param.
-  - Section 7: "On Building" paragraph (unchanged)
-  - Section 8: Contact placeholders (unchanged — pending Piyush)
-  - Section 9: capsule-render footer (unchanged)
+- `README.md` — **v3.2 (5-fix pass)**. All 5 targeted fixes applied:
+  - Fix 1: Typing SVG trimmed to 2 lines (`AI/ML Engineer in the Making` + `B.Tech CSE (AI/ML) • Building Real Systems`). BLING + iOS lines removed.
+  - Fix 2: Broken `github-readme-stats.vercel.app` cards DELETED. Replaced with `github-profile-summary-cards.vercel.app` (`profile-details`, `repos-per-language`, `most-commit-language`) — more reliable renderer for low-activity accounts.
+  - Fix 3: Plain text contact line REPLACED with three shields.io badge-image links. Email and LinkedIn **fully resolved** — no more placeholders.
+    - Email: piyush34305@gmail.com
+    - LinkedIn: https://www.linkedin.com/in/piyush-pal-pp034305
+  - Fix 4: MoodNest description expanded to 7 lines — covers daily logging, pattern tracking, no third-party deps, ships on iOS, design philosophy (not too clinical, not too cluttered).
+  - Fix 5: skillicons.dev updated — `java,cpp` added after `swift`, `perline=13` → `perline=15`.
 
 - `assets/banner.svg` — **DELETED**. Replaced by capsule-render URL in README.
 - `assets/stats-card.html` — **DELETED**. Not meaningfully linkable from GitHub README.
@@ -67,8 +64,9 @@
 
 ## ⚠️ BLOCKERS / PENDING FROM USER
 
-- **Email**: NOT YET PROVIDED — placeholder `YOUR_EMAIL_HERE` in README.md line ~78
-- **LinkedIn URL**: NOT YET PROVIDED — placeholder `YOUR_LINKEDIN_URL_HERE` in README.md line ~78
+- **Email**: ✅ RESOLVED — `piyush34305@gmail.com` (filled in as badge image)
+- **LinkedIn**: ✅ RESOLVED — `https://www.linkedin.com/in/piyush-pal-pp034305` (filled in as badge image)
+- **HANDOFF.md**: Ready to be deleted by Piyush once he confirms the profile looks correct.
 
 ---
 

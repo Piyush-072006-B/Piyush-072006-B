@@ -1,71 +1,48 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: Step FINAL — All files created. Project complete pending user info.
+> Last updated: OVERHAUL PASS — All 8 fixes applied. All files updated.
 
 ---
 
 ## ✅ COMPLETED
 
-- `HANDOFF.md` — initialized and kept current throughout session.
-- `assets/banner.svg` — animated SVG header banner. DONE. 900×300px, navy→violet gradient, typewriter headline animation, blinking cursor, floating particles, wave dash lines, ambient glow orbs, badge row reveals. Pure SVG+CSS, GitHub-renderable.
-- `assets/stats-card.html` — interactive skills page. DONE. Dark editorial aesthetic, Syne + DM Mono fonts, animated skill bars (Swift 92%, Python 75%, SwiftUI 88%, iOS SDK 80%, Xcode 85%, Git 82%, ML 55%, AI Security 48%), glowing stat boxes, tag pill cloud, CSS-only motion, no JS frameworks.
-- `README.md` — all 8 sections. DONE.
-  - Section 1: Animated banner embed
-  - Section 2: GitHub stats, Top Languages, Streak (2-col HTML table)
-  - Section 3: About Me (personal, confident tone)
-  - Section 4: Tech Stack (shields.io for-the-badge, grouped by category)
-  - Section 5: Featured Projects (2-col HTML table cards, all 6 repos)
-  - Section 6: Learning Roadmap (checklist + ASCII progress bars)
-  - Section 7: Connect (LinkedIn/email placeholders, GitHub badge)
-  - Section 8: Footer (profile views counter + tagline + links)
-- `projects/showcase.md` — deep-dive writeups for all 6 repos. DONE. Each with: What It Is, Core Features table, Technical Highlights, What I Learned.
+- `HANDOFF.md` — always current.
+- `assets/banner.svg` — **REBUILT (overhaul pass)**. Pure SVG-native animation only: clipPath expansion for typewriter effect, `<animateTransform>` for floating particles, `<animate>` for cursor blink + stroke-dashoffset wave lines + shimmer sweep. Zero JS, zero foreignObject, zero external fonts. Degrades cleanly to full static if animations stripped. viewBox 0 0 900 280.
+- `assets/stats-card.html` — **REBUILT as Adversarial Topology Explorer**. 7 topology cards (layering_chain, round_trip, mule_network, structuring, dormant_activation, velocity_attack, fan_in_fan_out), each with hand-drawn inline SVG node graphs, click-to-expand panels showing perturbation strategies + evasion stats. 7 distinct accent colours. CSS transitions. Zero CDN, zero frameworks.
+- `README.md` — **OVERHAULED**:
+  - Stats cards replaced with `<img>` pre-rendered embeds (exact URLs specified)
+  - BLING promoted to full-width hero with all 10 stack badges + architecture summary + headline stats + safeguards callout
+  - MoodNest as secondary project (3-sentence description)
+  - Other repos (ToDoApp, Nectar, PatsApp, Grocery-List) as compact badge-link row only
+  - Tech stack replaced with complete, accurate categorized set (5 categories, 25 badges)
+  - Learning section replaced with 3-sentence prose block under "What I'm Building Toward"
+  - Profile view counter removed
+  - Footer quote kept, links updated to Topology Explorer
 
 ---
 
 ## 🔄 IN PROGRESS
-- Nothing. All files complete.
+- Nothing. All overhaul fixes applied.
 
 ---
 
 ## ⏳ REMAINING TASKS
-1. ~~`assets/banner.svg`~~ — DONE
-2. ~~`assets/stats-card.html`~~ — DONE
-3. ~~`README.md`~~ — DONE (all 8 sections)
-4. ~~`projects/showcase.md`~~ — DONE
-
-**User action required:** Piyush must fill in:
-- LinkedIn URL (currently `YOUR_LINKEDIN_URL_HERE` in README.md line ~148)
-- Email (currently `YOUR_EMAIL_HERE` in README.md line ~149)
+- Git push to GitHub (next step after this HANDOFF update)
+- Piyush to fill in LinkedIn URL and Email placeholders in README.md
 
 ---
 
-## 🧠 KEY DECISIONS MADE
+## 🧠 KEY DECISIONS MADE (OVERHAUL)
 
-- **Design aesthetic**: Dark editorial — deep space black (#0d1117) → electric violet (#7c3aed) gradient. Inspired by the frontend-design skill's guidance to be bold, use distinctive typography, and avoid generic AI aesthetics.
-- **Banner font**: `Courier New / Lucida Console` monospace — code-native feel, GitHub-safe (no external font deps in SVG)
-- **HTML card fonts**: `Syne` (display, 800 weight) + `DM Mono` (body) — distinctive, non-generic pairing from Google Fonts
-- **Color palette**:
-  - Background: `#0d1117` (GitHub dark / deep space)
-  - Primary accent: `#7c3aed` (electric violet)
-  - Secondary accent: `#06b6d4` (cyan electric)
-  - Soft violet: `#a78bfa`
-  - Text primary: `#f0f6fc`
-  - Text muted: `#94a3b8`
-  - Card bg: `#161b22`
-- **Badge style**: shields.io `for-the-badge` throughout — consistent visual weight
-- **Project card layout**: 2-column HTML table in README for clean paired layout
-- **Tone**: "impressive junior dev who ships things" — confident but grounded, not corporate, not overclaiming
-- **Stats card theming**: tokyonight theme with custom color overrides (`bg_color=0d1117`, `title_color=a78bfa`, etc.)
-- **bling-redteam description**: Framed as AI red teaming / adversarial ML research — forward-thinking positioning for a 1st-year student
-- **Learning roadmap**: Added ASCII progress bars above the checklist for extra visual richness
-- **Frontend-design tokens applied**:
-  - Bold gradient backgrounds (not flat colors)
-  - Staggered animation delays for reveals
-  - CSS-only motion (SVG `<animate>` + `@keyframes`)
-  - Generous negative space in HTML card
-  - Noise texture overlay on stats-card.html
-  - Ambient radial glow orbs for depth
-  - Hover states with transform + box-shadow on all interactive elements
+- **Banner typewriter**: uses `<clipPath>` + `<animate attributeName="width">` — most GitHub-reliable approach. CSS `clip-path` animation on SVG text is inconsistent across renderers; SVG-native clipPath with animating rect is universal.
+- **Cursor blink**: `<animate attributeName="opacity" values="1;1;0;0;1">` — step-like behavior without CSS `step-end` which GitHub may strip.
+- **Particle animation**: `<animateTransform type="translate">` on individual circles — no CSS class references needed, works in SVG-sandboxed contexts.
+- **Wave lines**: `<animate attributeName="stroke-dashoffset">` — pure SVG, no CSS.
+- **Stats cards**: exact `<img>` tags with pre-rendered service URLs — no tables, no JS, GitHub-safe.
+- **Topology Explorer SVG graphs**: hand-drawn `<circle>` + `<line>` + `<polygon>` markers per topology — no JS graph library. Each topology's structure visually distinct.
+- **Expand/collapse**: CSS `max-height` + `opacity` transition on `.open` class toggle — pure CSS transition, JS only adds/removes class.
+- **BLING prominence**: Full-width `colspan="2"` table row above MoodNest — signals it as the flagship project unambiguously.
+- **Learning section**: prose only, no bullets/checkboxes — reads like someone who knows where they're going, not someone listing homework.
 
 ---
 
@@ -74,11 +51,10 @@
 | File | Status | Notes |
 |------|--------|-------|
 | `HANDOFF.md` | ✅ Done | Always current |
-| `assets/banner.svg` | ✅ Done | 900×300, typewriter + particles + wave lines |
-| `assets/stats-card.html` | ✅ Done | Syne + DM Mono, animated bars, tag cloud |
-| `assets/skills.svg` | N/A | Replaced by shields.io badges in README (better for GitHub rendering) |
-| `README.md` | ✅ Done | All 8 sections complete |
-| `projects/showcase.md` | ✅ Done | All 6 repos with full writeups |
+| `assets/banner.svg` | ✅ Done (v2) | Pure SVG-native animation, viewBox 900×280 |
+| `assets/stats-card.html` | ✅ Done (v2) | Adversarial Topology Explorer, 7 topologies |
+| `README.md` | ✅ Done (v2) | Full overhaul, all 8 problems fixed |
+| `projects/showcase.md` | ✅ Done (v1) | Deep-dive writeups — not changed in this pass |
 
 ---
 
@@ -86,19 +62,12 @@
 
 - **LinkedIn URL**: NOT YET PROVIDED — placeholder `YOUR_LINKEDIN_URL_HERE` in README.md
 - **Email**: NOT YET PROVIDED — placeholder `YOUR_EMAIL_HERE` in README.md
-- **College name**: NOT YET PROVIDED — left generic as "B.Tech CSE AI/ML" throughout
 
 ---
 
 ## 🆕 NEXT AGENT INSTRUCTIONS
 
-If you are a NEW agent reading this and this file has not yet been deleted:
-
-1. Read this entire file first
-2. All files are COMPLETE — do not recreate them
-3. The only pending user actions are: add LinkedIn URL + Email to README.md
-4. If user provides those details, do a simple find-replace in README.md:
-   - Replace `YOUR_LINKEDIN_URL_HERE` with actual LinkedIn profile URL
-   - Replace `YOUR_EMAIL_HERE` with actual email address
-5. Once Piyush confirms everything looks good, instruct him to delete this `HANDOFF.md` file
-6. Remind Piyush: push the repo as `Piyush-072006-B/Piyush-072006-B` on GitHub (same username = profile README)
+1. Read this file first
+2. All overhaul fixes are COMPLETE — do not rebuild any file
+3. Only pending: user provides LinkedIn + Email → find-replace in README.md → git add . → git commit → git push
+4. Once Piyush confirms everything looks good, instruct him to delete this HANDOFF.md

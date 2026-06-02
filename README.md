@@ -1,28 +1,14 @@
-<img src="assets/banner.svg" width="100%" alt="Piyush — Building intelligent iOS apps"/>
+<img src="assets/banner.svg" width="100%" alt="Piyush — Building intelligent iOS apps | BTech CSE AI/ML"/>
 
 ---
 
-<table align="center">
-<tr>
-<td align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Piyush-072006-B&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117&title_color=a78bfa&icon_color=06b6d4&text_color=f0f6fc)
-
-</td>
-<td align="center">
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Piyush-072006-B&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=f0f6fc)
-
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-
-![GitHub Streak](https://streak-stats.demolab.com?user=Piyush-072006-B&theme=tokyonight&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=a78bfa)
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Piyush-072006-B&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Piyush-072006-B&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Piyush-072006-B&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D"/>
+</p>
 
 ---
 
@@ -42,42 +28,63 @@ I'm an early-career developer who takes building seriously. Most people in their
 
 **Languages**
 
-<div>
+<p>
 
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3572A5?style=for-the-badge&logo=python&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
-</div>
+</p>
 
-**Platforms & Frameworks**
+**Frameworks & Libraries**
 
-<div>
+<p>
 
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-0070C9?style=for-the-badge&logo=swift&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS_SDK-000000?style=for-the-badge&logo=apple&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![NetworkX](https://img.shields.io/badge/NetworkX-013243?style=for-the-badge&logo=python&logoColor=white)
+
+</p>
+
+**Infrastructure & Tools**
+
+<p>
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
+
+</p>
+
+**Dev & Platform**
+
+<p>
+
 ![Xcode](https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white)
-
-</div>
-
-**Tools & Version Control**
-
-<div>
-
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![WSL2](https://img.shields.io/badge/WSL2-0078D4?style=for-the-badge&logo=linux&logoColor=white)
 
-</div>
+</p>
 
-**Learning & Exploring**
+**Domains**
 
-<div>
+<p>
 
-![CoreML](https://img.shields.io/badge/CoreML-0070C9?style=for-the-badge&logo=apple&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-10b981?style=for-the-badge&logo=tensorflow&logoColor=white)
-![AI Security](https://img.shields.io/badge/AI_Security-7c3aed?style=for-the-badge&logo=shieldsdotio&logoColor=white)
-![Red Teaming](https://img.shields.io/badge/Red_Teaming-9333ea?style=for-the-badge&logo=hackaday&logoColor=white)
+![Adversarial ML](https://img.shields.io/badge/Adversarial_ML-7c3aed?style=for-the-badge&logo=tensorflow&logoColor=white)
+![AI Red Teaming](https://img.shields.io/badge/AI_Red_Teaming-9333ea?style=for-the-badge&logo=hackaday&logoColor=white)
+![iOS Development](https://img.shields.io/badge/iOS_Development-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Graph Algorithms](https://img.shields.io/badge/Graph_Algorithms-10b981?style=for-the-badge&logo=graphql&logoColor=white)
+![Financial Crime Research](https://img.shields.io/badge/Financial_Crime_Research-DC2626?style=for-the-badge&logo=databricks&logoColor=white)
 
-</div>
+</p>
 
 ---
 
@@ -85,80 +92,64 @@ I'm an early-career developer who takes building seriously. Most people in their
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td colspan="2" valign="top">
 
-### 🧠 MoodNest
-
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-0070C9?style=for-the-badge&logo=swift&logoColor=white)
-
-A mood tracking iOS app built with SwiftUI. Log daily emotional entries, identify patterns over time, and visualize your mental wellness journey through clean, intuitive charts. Because understanding yourself is the first step to improving yourself.
-
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/MoodNest-7.2F2)
-
-</td>
-<td width="50%" valign="top">
-
-### ✅ ToDoApp
-
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-0070C9?style=for-the-badge&logo=swift&logoColor=white)
-
-A clean, fast productivity app for iOS. Manage tasks, set priorities, and stay on top of your day without the bloat that every other to-do app ships with. Built with a focus on snappy UX and persistent storage that just works.
-
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/ToDoApp)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🌸 Nectar
-
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-A carefully crafted iOS app that brings a delightful, nectar-smooth user experience to its core functionality. Built with attention to motion design and interface polish — the kind of app that feels good to use before you even know what it does.
-
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/Nectar)
-
-</td>
-<td width="50%" valign="top">
-
-### 🐾 PatsApp
-
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-0070C9?style=for-the-badge&logo=swift&logoColor=white)
-
-A messaging and community iOS app designed around pets and their people. Connect with fellow pet owners, share moments, and build a community around the furry things that matter. Real-time messaging built natively in Swift.
-
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/PatsApp)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🛒 Grocery List
-
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-A frictionless grocery management app for iOS. Add items, check them off, organize by category, and never forget something at the store again. Proof that great software solves everyday problems with zero friction.
-
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/Grocery-List)
-
-</td>
-<td width="50%" valign="top">
-
-### 🛡️ bling-redteam
+### 🛡️ BLING — Adversarial Financial Crime Research Engine
 
 ![Python](https://img.shields.io/badge/Python-3572A5?style=for-the-badge&logo=python&logoColor=white)
-![AI Security](https://img.shields.io/badge/AI_Security-7c3aed?style=for-the-badge&logo=shieldsdotio&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![NetworkX](https://img.shields.io/badge/NetworkX-013243?style=for-the-badge&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 
-A Python-based AI red-teaming project focused on probing the limits of large language models. Explores adversarial prompts, jailbreak techniques, and model robustness — because understanding how AI systems fail is essential to building AI systems that don't.
+A sandboxed adversarial financial crime research engine. It generates synthetic money-laundering graph topologies across **7 structural fraud families**, mutates them via **7 perturbation strategies**, streams events through Kafka, and evaluates evasion against detection heuristics — exporting validated patterns for Blue Team review.
 
-[![View Repository](https://img.shields.io/badge/View_Repo-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/bling-redteam)
+The core is a **Robustness Orchestrator loop**: generate topology → fingerprint graph structure → stream through Kafka → evaluate against heuristics → mutate → export. Each cycle is immutable and auditable.
+
+> **`100% evasion rate on gen-0 topologies across all 7 fraud families`**  
+> **`65+ immutable run records · 57 canonical evasion exports`**
+
+> 🔒 **Safeguards:** Human-validated outputs only. No automatic model updates. All flagged topologies require investigator sign-off before export. Built for research integrity, not automation of harm.
+
+[![View Repository](https://img.shields.io/badge/bling--redteam-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/bling-redteam)
+&nbsp;&nbsp;
+[![Topology Explorer](https://img.shields.io/badge/📊_Topology_Explorer-7c3aed?style=for-the-badge)](assets/stats-card.html)
+
+</td>
+</tr>
+<tr>
+<td width="55%" valign="top">
+
+### 🧠 MoodNest — iOS Mental Wellness Tracker
+
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-0070C9?style=for-the-badge&logo=swift&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Xcode](https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white)
+
+A mood tracking companion for iOS built entirely in SwiftUI. Log emotional entries, surface patterns through native charts, and keep everything private — no accounts, no cloud, just your data on your device. The interesting technical challenge: building a calm, trustworthy UX for moments when the user is already stressed.
+
+[![View Repository](https://img.shields.io/badge/MoodNest-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Piyush-072006-B/MoodNest-7.2F2)
+
+</td>
+<td width="45%" valign="top">
+
+### 📦 Other Work
+
+<br/>
+
+[![ToDoApp](https://img.shields.io/badge/ToDoApp-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/Piyush-072006-B/ToDoApp)
+
+[![Nectar](https://img.shields.io/badge/Nectar-0070C9?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/Piyush-072006-B/Nectar)
+
+[![PatsApp](https://img.shields.io/badge/PatsApp-7c3aed?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/Piyush-072006-B/PatsApp)
+
+[![Grocery-List](https://img.shields.io/badge/Grocery--List-10b981?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/Piyush-072006-B/Grocery-List)
 
 </td>
 </tr>
@@ -166,25 +157,9 @@ A Python-based AI red-teaming project focused on probing the limits of large lan
 
 ---
 
-## 🗺️ My Learning Journey
+## 🧭 What I'm Building Toward
 
-```
-iOS Development with SwiftUI          ████████████████████  Done
-Building production iOS apps          ████████████████████  Done
-Python for AI/ML fundamentals         ████████████████░░░░  In progress
-CoreML & on-device AI inference       ████████░░░░░░░░░░░░  Learning
-Transformer architectures             ████░░░░░░░░░░░░░░░░  Up next
-Full-stack AI app development         ░░░░░░░░░░░░░░░░░░░░  Roadmap
-Contributing to open source AI/ML     ░░░░░░░░░░░░░░░░░░░░  Roadmap
-```
-
-- [x] iOS Development with SwiftUI
-- [x] Building production apps on App Store pipeline
-- [x] Python for AI/ML fundamentals
-- [ ] CoreML & on-device AI inference
-- [ ] Transformer architectures & fine-tuning
-- [ ] Full-stack AI app development
-- [ ] Contributing to open source AI/ML projects
+On-device AI inference using CoreML — I want model intelligence to live inside the app, responding in milliseconds without a network call, because latency kills the illusion of intelligence. Graph neural networks for fraud topology classification — the natural next layer on top of BLING's heuristic engine, replacing handcrafted detection rules with a learned boundary that generalizes. Turning BLING Phase 2 into a trained detection model — closing the loop from adversarial generation to autonomous defense, so the system learns from what it creates.
 
 ---
 
@@ -204,11 +179,9 @@ Contributing to open source AI/ML     ░░░░░░░░░░░░░░
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Piyush-072006-B&color=7c3aed&style=flat-square&label=profile+views" alt="Profile views"/>
-  <br/><br/>
   <em>"Building the intersection of intelligence and interface."</em>
   <br/><br/>
-  <a href="assets/stats-card.html">📊 Interactive Skills Card</a>
+  <a href="assets/stats-card.html">📊 Interactive Topology Explorer</a>
   &nbsp;·&nbsp;
   <a href="projects/showcase.md">📁 Detailed Project Writeups</a>
 </p>

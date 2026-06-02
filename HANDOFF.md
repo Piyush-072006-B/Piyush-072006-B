@@ -1,48 +1,55 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: OVERHAUL PASS — All 8 fixes applied. All files updated.
+> Last updated: COMPLETE REWRITE PASS — DONE. README fully rewritten. Assets deleted.
 
 ---
 
 ## ✅ COMPLETED
 
 - `HANDOFF.md` — always current.
-- `assets/banner.svg` — **REBUILT (overhaul pass)**. Pure SVG-native animation only: clipPath expansion for typewriter effect, `<animateTransform>` for floating particles, `<animate>` for cursor blink + stroke-dashoffset wave lines + shimmer sweep. Zero JS, zero foreignObject, zero external fonts. Degrades cleanly to full static if animations stripped. viewBox 0 0 900 280.
-- `assets/stats-card.html` — **REBUILT as Adversarial Topology Explorer**. 7 topology cards (layering_chain, round_trip, mule_network, structuring, dormant_activation, velocity_attack, fan_in_fan_out), each with hand-drawn inline SVG node graphs, click-to-expand panels showing perturbation strategies + evasion stats. 7 distinct accent colours. CSS transitions. Zero CDN, zero frameworks.
-- `README.md` — **OVERHAULED**:
-  - Stats cards replaced with `<img>` pre-rendered embeds (exact URLs specified)
-  - BLING promoted to full-width hero with all 10 stack badges + architecture summary + headline stats + safeguards callout
-  - MoodNest as secondary project (3-sentence description)
-  - Other repos (ToDoApp, Nectar, PatsApp, Grocery-List) as compact badge-link row only
-  - Tech stack replaced with complete, accurate categorized set (5 categories, 25 badges)
-  - Learning section replaced with 3-sentence prose block under "What I'm Building Toward"
-  - Profile view counter removed
-  - Footer quote kept, links updated to Topology Explorer
+- `README.md` — **COMPLETE REWRITE (v3)**. Ground-up rewrite. All visuals use server-rendered external services only. No local assets. Structure:
+  - Section 1: capsule-render waving header (server-side animated PNG)
+  - Section 1b: readme-typing-svg rotating tagline (server-side animated SVG)
+  - Section 2: Identity prose block (italic, centered, BYTEJAYS style)
+  - Section 3: skillicons.dev icon grid + sub text for unlisted tools
+  - Section 4: BYTEJAYS-style bold-link + tagline + prose for BLING and MoodNest; compact italics line for other repos
+  - Section 5: Fenced code block "Currently" — monospace, no bullets
+  - Section 6: github-readme-stats (transparent theme), streak-stats, activity-graph
+  - Section 7: "On Building" — one paragraph, first-person voice, no header
+  - Section 8: Plain text contact line (email placeholder + LinkedIn placeholder + GitHub)
+  - Section 9: capsule-render waving footer
+
+- `assets/banner.svg` — **DELETED**. Replaced by capsule-render URL in README.
+- `assets/stats-card.html` — **DELETED**. Not meaningfully linkable from GitHub README.
 
 ---
 
 ## 🔄 IN PROGRESS
-- Nothing. All overhaul fixes applied.
+- Nothing. All work complete. Push to GitHub is the next step.
 
 ---
 
 ## ⏳ REMAINING TASKS
-- Git push to GitHub (next step after this HANDOFF update)
-- Piyush to fill in LinkedIn URL and Email placeholders in README.md
+- Git push to GitHub
+- Piyush to fill in two placeholders in README.md:
+  1. `YOUR_EMAIL_HERE` → actual email address
+  2. `YOUR_LINKEDIN_URL_HERE` → LinkedIn profile URL
 
 ---
 
-## 🧠 KEY DECISIONS MADE (OVERHAUL)
+## 🧠 KEY DECISIONS MADE (COMPLETE REWRITE)
 
-- **Banner typewriter**: uses `<clipPath>` + `<animate attributeName="width">` — most GitHub-reliable approach. CSS `clip-path` animation on SVG text is inconsistent across renderers; SVG-native clipPath with animating rect is universal.
-- **Cursor blink**: `<animate attributeName="opacity" values="1;1;0;0;1">` — step-like behavior without CSS `step-end` which GitHub may strip.
-- **Particle animation**: `<animateTransform type="translate">` on individual circles — no CSS class references needed, works in SVG-sandboxed contexts.
-- **Wave lines**: `<animate attributeName="stroke-dashoffset">` — pure SVG, no CSS.
-- **Stats cards**: exact `<img>` tags with pre-rendered service URLs — no tables, no JS, GitHub-safe.
-- **Topology Explorer SVG graphs**: hand-drawn `<circle>` + `<line>` + `<polygon>` markers per topology — no JS graph library. Each topology's structure visually distinct.
-- **Expand/collapse**: CSS `max-height` + `opacity` transition on `.open` class toggle — pure CSS transition, JS only adds/removes class.
-- **BLING prominence**: Full-width `colspan="2"` table row above MoodNest — signals it as the flagship project unambiguously.
-- **Learning section**: prose only, no bullets/checkboxes — reads like someone who knows where they're going, not someone listing homework.
+- **Rendering philosophy**: every visual is a server-rendered `<img>` URL. GitHub fetches and caches them. Zero local SVG, zero JS, zero animations in repo files.
+- **capsule-render**: `type=waving` returns an animated PNG via Vercel — works on GitHub. Color gradient `0:0d1117,50:1a1a2e,100:0d1117` matches dark profile aesthetic.
+- **readme-typing-svg**: `demolab.com` service returns a server-animated SVG — confirmed GitHub-compatible. JetBrains Mono font, 3 rotating lines covering BLING stat + identity + domain.
+- **skillicons.dev**: single pre-rendered PNG of 13 tech icons, `perline=13` keeps them in one row, `theme=dark` matches profile.
+- **BYTEJAYS prose style**: no `<table>` project cards, no badge rows per project, no bold keywords. Bold project name as repo hyperlink, italic tagline, dense paragraph, backtick stack line. Reads like a senior engineer's profile, not a student template.
+- **Stats theme**: `transparent` on github-readme-stats and streak-stats — blends into any dark background without white box artifacts.
+- **Activity graph**: `bg_color=0d1117` matches GitHub dark mode background exactly.
+- **"Currently" section**: fenced code block with `→` arrows — looks intentional, clean, monospace. No bullets.
+- **"On Building" paragraph**: no markdown header (`##`), just plain prose — closer to BYTEJAYS manifesto style.
+- **Contact**: plain Markdown text line, no shields.io badges — minimal, serious.
+- **Deleted assets**: banner.svg and stats-card.html removed. The topology explorer was genuinely interactive but not linkable from the profile README in any useful way on GitHub mobile.
 
 ---
 
@@ -51,23 +58,34 @@
 | File | Status | Notes |
 |------|--------|-------|
 | `HANDOFF.md` | ✅ Done | Always current |
-| `assets/banner.svg` | ✅ Done (v2) | Pure SVG-native animation, viewBox 900×280 |
-| `assets/stats-card.html` | ✅ Done (v2) | Adversarial Topology Explorer, 7 topologies |
-| `README.md` | ✅ Done (v2) | Full overhaul, all 8 problems fixed |
-| `projects/showcase.md` | ✅ Done (v1) | Deep-dive writeups — not changed in this pass |
+| `README.md` | ✅ Done (v3) | Complete rewrite — all server-rendered services |
+| `assets/banner.svg` | ❌ Deleted | Replaced by capsule-render URL |
+| `assets/stats-card.html` | ❌ Deleted | Not meaningfully usable from profile README |
+| `projects/showcase.md` | ✅ Done (v1) | Deep-dive writeups — not touched in this pass |
 
 ---
 
 ## ⚠️ BLOCKERS / PENDING FROM USER
 
-- **LinkedIn URL**: NOT YET PROVIDED — placeholder `YOUR_LINKEDIN_URL_HERE` in README.md
-- **Email**: NOT YET PROVIDED — placeholder `YOUR_EMAIL_HERE` in README.md
+- **Email**: NOT YET PROVIDED — placeholder `YOUR_EMAIL_HERE` in README.md line ~78
+- **LinkedIn URL**: NOT YET PROVIDED — placeholder `YOUR_LINKEDIN_URL_HERE` in README.md line ~78
 
 ---
 
 ## 🆕 NEXT AGENT INSTRUCTIONS
 
-1. Read this file first
-2. All overhaul fixes are COMPLETE — do not rebuild any file
-3. Only pending: user provides LinkedIn + Email → find-replace in README.md → git add . → git commit → git push
-4. Once Piyush confirms everything looks good, instruct him to delete this HANDOFF.md
+1. Read this file first — all work is COMPLETE
+2. Do NOT recreate banner.svg or stats-card.html
+3. Only action needed: user provides email + LinkedIn → find-replace in README.md → git push
+4. Once confirmed, instruct Piyush to delete this HANDOFF.md from the repo
+
+## External Services Used (all confirmed GitHub-compatible)
+
+| Service | URL pattern | What it renders |
+|---------|-------------|-----------------|
+| capsule-render | `capsule-render.vercel.app/api` | Animated waving header/footer PNG |
+| readme-typing-svg | `readme-typing-svg.demolab.com` | Rotating text animation SVG |
+| skillicons.dev | `skillicons.dev/icons` | Tech icon grid PNG |
+| github-readme-stats | `github-readme-stats.vercel.app/api` | Stats card PNG |
+| streak-stats | `streak-stats.demolab.com` | Streak card PNG |
+| github-readme-activity-graph | `github-readme-activity-graph.vercel.app/graph` | Contribution graph PNG |

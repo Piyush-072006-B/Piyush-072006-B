@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piyush — Skills & Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    /* ═══════════════════════════════════════════════
+       DESIGN TOKENS — Dark Editorial × Electric Violet
+    ═══════════════════════════════════════════════ */
+    :root {
+      --bg-base:        #080c14;
+      --bg-surface:     #0d1117;
+      --bg-card:        #111827;
+      --bg-card-hover:  #161d2e;
+      --accent-violet:  #7c3aed;
+      --accent-cyan:    #06b6d4;
+      --accent-violet-soft: #a78bfa;
+      --accent-cyan-soft:   #67e8f9;
+      --text-primary:   #f0f6fc;
+      --text-secondary: #94a3b8;
+      --text-muted:     #4b5563;
+      --border:         rgba(124, 58, 237, 0.18);
+      --border-hover:   rgba(124, 58, 237, 0.5);
+      --glow-violet:    rgba(124, 58, 237, 0.3);
+      --glow-cyan:      rgba(6, 182, 212, 0.2);
+
+      --font-display: 'Syne', sans-serif;
+      --font-mono:    'DM Mono', monospace;
+
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-lg:  20px;
+
+      --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-mono);
+      background: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ambient glow orbs */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: orbDrift 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes orbDrift {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(-40px, 60px) scale(1.1); }
+    }
+
+    .orb-bottom {
+      position: fixed;
+      bottom: -200px; left: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: orbDrift 10s ease-in-out infinite alternate-reverse;
+    }
+
+    /* ═══════════════════════════════════════════════
+       LAYOUT
+    ═══════════════════════════════════════════════ */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       HEADER
+    ═══════════════════════════════════════════════ */
+    .header {
+      text-align: center;
+      margin-bottom: 64px;
+      animation: fadeSlideUp 0.7s ease-out both;
+    }
+
+    .header-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 16px;
+      opacity: 0.8;
+    }
+
+    .header-name {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 8vw, 68px);
+      font-weight: 800;
+      line-height: 1.0;
+      background: linear-gradient(135deg, #f0f6fc 0%, #c4b5fd 40%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+      letter-spacing: -2px;
+    }
+
+    .header-title {
+      font-family: var(--font-mono);
+      font-size: 15px;
+      color: var(--text-secondary);
+      letter-spacing: 0.5px;
+    }
+
+    .header-title span {
+      color: var(--accent-violet-soft);
+    }
+
+    /* ═══════════════════════════════════════════════
+       SECTION HEADERS
+    ═══════════════════════════════════════════════ */
+    .section {
+      margin-bottom: 52px;
+      animation: fadeSlideUp 0.7s ease-out both;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .section-label-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--border), transparent);
+    }
+
+    .section-label-text {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent-violet-soft);
+      white-space: nowrap;
+    }
+
+    /* ═══════════════════════════════════════════════
+       SKILL BAR CARDS
+    ═══════════════════════════════════════════════ */
+    .skills-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s var(--ease-elastic);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent-violet), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .skill-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .skill-card:hover::before {
+      opacity: 1;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .skill-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .skill-icon {
+      width: 28px; height: 28px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .skill-percent {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent-violet-soft);
+    }
+
+    .skill-bar-track {
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      width: 0%;
+      transition: width 1.4s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+    }
+
+    /* Glow tail on bar */
+    .skill-bar-fill::after {
+      content: '';
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      filter: blur(6px);
+      opacity: 0.8;
+    }
+
+    /* Color variants */
+    .bar-swift { background: linear-gradient(90deg, #c0392b, #FA7343); }
+    .bar-swift::after { background: #FA7343; }
+
+    .bar-python { background: linear-gradient(90deg, #2670a8, #3572A5); }
+    .bar-python::after { background: #5ba4e0; }
+
+    .bar-swiftui { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+    .bar-swiftui::after { background: #a78bfa; }
+
+    .bar-ios { background: linear-gradient(90deg, #155e75, #06b6d4); }
+    .bar-ios::after { background: #06b6d4; }
+
+    .bar-git { background: linear-gradient(90deg, #b8471b, #f05032); }
+    .bar-git::after { background: #f05032; }
+
+    .bar-ml { background: linear-gradient(90deg, #065f46, #10b981); }
+    .bar-ml::after { background: #10b981; }
+
+    .bar-security { background: linear-gradient(90deg, #581c87, #9333ea); }
+    .bar-security::after { background: #9333ea; }
+
+    .bar-xcode { background: linear-gradient(90deg, #1d4ed8, #3b82f6); }
+    .bar-xcode::after { background: #3b82f6; }
+
+    /* ═══════════════════════════════════════════════
+       TAG PILLS SECTION
+    ═══════════════════════════════════════════════ */
+    .tags-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 99px;
+      border: 1px solid;
+      letter-spacing: 0.5px;
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+
+    .tag:hover {
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .tag-violet {
+      color: var(--accent-violet-soft);
+      border-color: rgba(124, 58, 237, 0.4);
+      background: rgba(124, 58, 237, 0.08);
+    }
+    .tag-violet:hover {
+      background: rgba(124, 58, 237, 0.18);
+      border-color: rgba(124, 58, 237, 0.7);
+      box-shadow: 0 0 12px rgba(124, 58, 237, 0.25);
+    }
+
+    .tag-cyan {
+      color: var(--accent-cyan-soft);
+      border-color: rgba(6, 182, 212, 0.4);
+      background: rgba(6, 182, 212, 0.07);
+    }
+    .tag-cyan:hover {
+      background: rgba(6, 182, 212, 0.15);
+      border-color: rgba(6, 182, 212, 0.65);
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.2);
+    }
+
+    .tag-orange {
+      color: #fdba74;
+      border-color: rgba(251, 113, 67, 0.4);
+      background: rgba(251, 113, 67, 0.07);
+    }
+    .tag-orange:hover {
+      background: rgba(251, 113, 67, 0.15);
+      border-color: rgba(251, 113, 67, 0.65);
+      box-shadow: 0 0 12px rgba(251, 113, 67, 0.2);
+    }
+
+    .tag-green {
+      color: #6ee7b7;
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.07);
+    }
+    .tag-green:hover {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.65);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+    }
+
+    /* ═══════════════════════════════════════════════
+       STAT BOXES
+    ═══════════════════════════════════════════════ */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-bottom: 52px;
+      animation: fadeSlideUp 0.7s ease-out 0.2s both;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-box::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent-violet) 0%, var(--accent-cyan) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+    }
+
+    .stat-box:hover {
+      border-color: var(--accent-violet);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px var(--glow-violet);
+    }
+
+    .stat-box:hover::after { opacity: 0.05; }
+
+    .stat-box > * { position: relative; z-index: 1; }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 38px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-violet-soft), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ═══════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════ */
+    .footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      animation: fadeSlideUp 0.7s ease-out 0.6s both;
+    }
+
+    .footer-text {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+
+    .footer-link {
+      color: var(--accent-cyan-soft);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover { color: var(--accent-violet-soft); }
+
+    /* ═══════════════════════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════════════════════ */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Staggered section reveals */
+    .section:nth-child(1) { animation-delay: 0.1s; }
+    .section:nth-child(2) { animation-delay: 0.2s; }
+    .section:nth-child(3) { animation-delay: 0.3s; }
+    .section:nth-child(4) { animation-delay: 0.4s; }
+    .section:nth-child(5) { animation-delay: 0.5s; }
+
+    /* ═══════════════════════════════════════════════
+       SCROLLBAR
+    ═══════════════════════════════════════════════ */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-base); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent-violet);
+      border-radius: 99px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .container { padding: 40px 16px 60px; }
+      .header-name { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb-bottom"></div>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-eyebrow">// skills &amp; tech stack</div>
+      <h1 class="header-name">Piyush</h1>
+      <p class="header-title">
+        <span>iOS Engineer</span> · BTech CSE AI/ML · Indie Builder
+      </p>
+    </div>
+
+    <!-- QUICK STATS -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-number">6</div>
+        <div class="stat-label">Projects Shipped</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Core Languages</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">1st</div>
+        <div class="stat-label">Year BTech</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Curiosity</div>
+      </div>
+    </div>
+
+    <!-- CORE LANGUAGES -->
+    <div class="section">
+      <div class="section-label">
+        <span class="section-label-text">// core languages</span>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-target="92">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(250,115,67,0.15);">🟠</div>
+              Swift
+            </div>
+            <div class="skill-percent">92%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-swift" data-width="92"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-target="75">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(53,114,165,0.15);">🐍</div>
+              Python
+            </div>
+            <div class="skill-percent">75%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-python" data-width="75"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- iOS STACK -->
+    <div class="section">
+      <div class="section-label">
+        <span class="section-label-text">// ios development</span>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(124,58,237,0.15);">🎨</div>
+              SwiftUI
+            </div>
+            <div class="skill-percent">88%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-swiftui" data-width="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(6,182,212,0.12);">📱</div>
+              iOS SDK &amp; UIKit
+            </div>
+            <div class="skill-percent">80%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-ios" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(59,130,246,0.12);">🔧</div>
+              Xcode
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-xcode" data-width="85"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOOLS & WORKFLOW -->
+    <div class="section">
+      <div class="section-label">
+        <span class="section-label-text">// tools &amp; workflow</span>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(240,80,50,0.12);">🌿</div>
+              Git &amp; GitHub
+            </div>
+            <div class="skill-percent">82%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-git" data-width="82"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEARNING / INTERESTS -->
+    <div class="section">
+      <div class="section-label">
+        <span class="section-label-text">// learning &amp; interests</span>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(16,185,129,0.12);">🤖</div>
+              Machine Learning
+            </div>
+            <div class="skill-percent">55%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-ml" data-width="55"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <div class="skill-icon" style="background:rgba(147,51,234,0.12);">🛡️</div>
+              AI Security / Red Teaming
+            </div>
+            <div class="skill-percent">48%</div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill bar-security" data-width="48"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOPICS & KEYWORDS -->
+    <div class="section">
+      <div class="section-label">
+        <span class="section-label-text">// topics &amp; keywords</span>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="tags-grid">
+        <span class="tag tag-orange">Swift</span>
+        <span class="tag tag-orange">SwiftUI</span>
+        <span class="tag tag-orange">iOS Development</span>
+        <span class="tag tag-orange">Xcode</span>
+        <span class="tag tag-cyan">Python</span>
+        <span class="tag tag-cyan">AI/ML</span>
+        <span class="tag tag-cyan">CoreML</span>
+        <span class="tag tag-cyan">On-device Inference</span>
+        <span class="tag tag-violet">Red Teaming</span>
+        <span class="tag tag-violet">AI Security</span>
+        <span class="tag tag-violet">Adversarial ML</span>
+        <span class="tag tag-green">Mobile Apps</span>
+        <span class="tag tag-green">Productivity Tools</span>
+        <span class="tag tag-green">Mental Wellness Tech</span>
+        <span class="tag tag-green">Open Source</span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p class="footer-text">
+        "Building the intersection of intelligence and interface." ·
+        <a class="footer-link" href="https://github.com/Piyush-072006-B" target="_blank" rel="noopener">
+          github.com/Piyush-072006-B
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    // ── Skill Bar Animation on scroll / page load ──
+    const fills = document.querySelectorAll('.skill-bar-fill');
+
+    const animateBars = () => {
+      fills.forEach(fill => {
+        const target = fill.getAttribute('data-width');
+        if (target) {
+          fill.style.width = target + '%';
+        }
+      });
+    };
+
+    // Trigger after a short delay for dramatic entrance
+    setTimeout(animateBars, 400);
+
+    // ── Intersection Observer for sections ──
+    const sections = document.querySelectorAll('.section');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const fills2 = entry.target.querySelectorAll('.skill-bar-fill');
+          fills2.forEach(f => {
+            const w = f.getAttribute('data-width');
+            if (w) f.style.width = w + '%';
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(s => obs.observe(s));
+  </script>
+</body>
+</html>

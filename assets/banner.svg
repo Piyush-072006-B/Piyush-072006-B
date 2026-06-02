@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Main background gradient: deep navy to dark violet -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="45%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Glow gradient for accent orb -->
+    <radialGradient id="glowOrb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.35" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="glowOrb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    </radialGradient>
+    <!-- Shimmer gradient for text -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e2d9f3" />
+      <stop offset="40%" style="stop-color:#ffffff" />
+      <stop offset="70%" style="stop-color:#c4b5fd" />
+      <stop offset="100%" style="stop-color:#06b6d4" />
+    </linearGradient>
+    <!-- Cyan accent gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4" />
+      <stop offset="100%" style="stop-color:#7c3aed" />
+    </linearGradient>
+    <!-- Grid line pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c3aed" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+    <!-- Clip for particle containment -->
+    <clipPath id="bannerClip">
+      <rect width="900" height="300"/>
+    </clipPath>
+
+    <style>
+      /* ── Typewriter effect ── */
+      @keyframes typewriter {
+        0%   { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+      /* ── Fade-in for subtitle ── */
+      @keyframes fadeUp {
+        0%   { opacity: 0; transform: translateY(12px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      /* ── Particle float animations ── */
+      @keyframes float1 {
+        0%,100% { transform: translateY(0px) translateX(0px); opacity:0.6; }
+        33%      { transform: translateY(-18px) translateX(8px); opacity:1; }
+        66%      { transform: translateY(-8px) translateX(-6px); opacity:0.7; }
+      }
+      @keyframes float2 {
+        0%,100% { transform: translateY(0px) translateX(0px); opacity:0.4; }
+        33%      { transform: translateY(14px) translateX(-10px); opacity:0.8; }
+        66%      { transform: translateY(6px) translateX(12px); opacity:0.5; }
+      }
+      @keyframes float3 {
+        0%,100% { transform: translateY(0px) translateX(0px); opacity:0.5; }
+        50%      { transform: translateY(-22px) translateX(-4px); opacity:0.9; }
+      }
+      @keyframes float4 {
+        0%,100% { transform: translateY(0px); opacity:0.3; }
+        50%      { transform: translateY(16px); opacity:0.7; }
+      }
+      /* ── Orb pulse ── */
+      @keyframes orbPulse {
+        0%,100% { opacity:0.7; r:130; }
+        50%      { opacity:1; r:155; }
+      }
+      @keyframes orbPulse2 {
+        0%,100% { opacity:0.5; r:90; }
+        50%      { opacity:0.8; r:110; }
+      }
+      /* ── Shimmer wave across headline ── */
+      @keyframes shimmer {
+        0%   { x:-200px; }
+        100% { x:1100px; }
+      }
+      /* ── Badge glow ── */
+      @keyframes badgeGlow {
+        0%,100% { opacity:0.8; }
+        50%      { opacity:1; }
+      }
+      /* ── Wave line animation ── */
+      @keyframes waveDash {
+        0%   { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -200; }
+      }
+
+      .headline {
+        animation: typewriter 1.8s steps(22, end) 0.3s both;
+      }
+      .cursor {
+        animation: blink 0.9s step-end infinite;
+        animation-delay: 2.1s;
+      }
+      .subtitle {
+        animation: fadeUp 0.8s ease-out 2.3s both;
+      }
+      .badge-row {
+        animation: fadeUp 0.8s ease-out 2.9s both;
+      }
+      .p1 { animation: float1 5.2s ease-in-out infinite; }
+      .p2 { animation: float2 6.8s ease-in-out infinite 0.5s; }
+      .p3 { animation: float3 4.5s ease-in-out infinite 1.2s; }
+      .p4 { animation: float1 7.1s ease-in-out infinite 0.8s; }
+      .p5 { animation: float2 5.8s ease-in-out infinite 2s; }
+      .p6 { animation: float3 6.3s ease-in-out infinite 0.3s; }
+      .p7 { animation: float4 4.8s ease-in-out infinite 1.5s; }
+      .p8 { animation: float1 5.5s ease-in-out infinite 2.5s; }
+      .p9 { animation: float2 7.3s ease-in-out infinite 0.9s; }
+      .p10{ animation: float3 5.1s ease-in-out infinite 1.8s; }
+      .orb1 { animation: orbPulse 4s ease-in-out infinite; }
+      .orb2 { animation: orbPulse2 5.5s ease-in-out infinite 1s; }
+      .wave-line { animation: waveDash 3s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="900" height="300" fill="url(#bgGrad)"/>
+  <!-- Subtle grid overlay -->
+  <rect width="900" height="300" fill="url(#grid)"/>
+
+  <!-- ── Ambient glow orbs ── -->
+  <g clip-path="url(#bannerClip)">
+    <ellipse class="orb1" cx="720" cy="150" rx="180" ry="130" fill="url(#glowOrb1)"/>
+    <ellipse class="orb2" cx="120" cy="80" rx="120" ry="90" fill="url(#glowOrb2)"/>
+    <ellipse cx="500" cy="290" rx="200" ry="80" fill="#7c3aed" opacity="0.07"/>
+  </g>
+
+  <!-- ── Decorative wave lines (bottom) ── -->
+  <g clip-path="url(#bannerClip)" opacity="0.25">
+    <path class="wave-line" d="M-50,240 Q100,220 200,240 Q300,260 400,240 Q500,220 600,240 Q700,260 800,240 Q900,220 1000,240"
+          fill="none" stroke="url(#cyanGrad)" stroke-width="1.2" stroke-dasharray="8 6"/>
+    <path class="wave-line" d="M-50,255 Q150,235 250,255 Q350,275 450,255 Q550,235 650,255 Q750,275 850,255 Q950,235 1050,255"
+          fill="none" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="5 8"
+          style="animation-delay:-1.5s"/>
+  </g>
+
+  <!-- ── Floating particles ── -->
+  <g clip-path="url(#bannerClip)">
+    <!-- Small circles -->
+    <circle class="p1" cx="820" cy="50"  r="3.5" fill="#7c3aed" opacity="0.7"/>
+    <circle class="p2" cx="760" cy="220" r="2"   fill="#06b6d4" opacity="0.6"/>
+    <circle class="p3" cx="860" cy="160" r="4"   fill="#a78bfa" opacity="0.5"/>
+    <circle class="p4" cx="680" cy="40"  r="2.5" fill="#06b6d4" opacity="0.5"/>
+    <circle class="p5" cx="80"  cy="200" r="3"   fill="#7c3aed" opacity="0.5"/>
+    <circle class="p6" cx="150" cy="250" r="2"   fill="#a78bfa" opacity="0.6"/>
+    <circle class="p7" cx="50"  cy="50"  r="3.5" fill="#06b6d4" opacity="0.4"/>
+    <circle class="p8" cx="800" cy="270" r="2.5" fill="#7c3aed" opacity="0.5"/>
+    <circle class="p9" cx="200" cy="30"  r="2"   fill="#a78bfa" opacity="0.4"/>
+    <circle class="p10"cx="620" cy="260" r="3"   fill="#06b6d4" opacity="0.45"/>
+    <!-- Diamond shapes -->
+    <rect class="p3" x="845" y="95" width="5" height="5" fill="#7c3aed" opacity="0.5" transform="rotate(45 847 97)"/>
+    <rect class="p1" x="105" y="135" width="4" height="4" fill="#06b6d4" opacity="0.4" transform="rotate(45 107 137)"/>
+    <rect class="p6" x="740" y="190" width="4" height="4" fill="#a78bfa" opacity="0.3" transform="rotate(45 742 192)"/>
+    <!-- Tiny dots cluster -->
+    <circle class="p2" cx="540" cy="25" r="1.5" fill="#7c3aed" opacity="0.6"/>
+    <circle class="p5" cx="548" cy="32" r="1"   fill="#06b6d4" opacity="0.5"/>
+    <circle class="p8" cx="533" cy="30" r="1.5" fill="#a78bfa" opacity="0.4"/>
+  </g>
+
+  <!-- ── Left accent bar ── -->
+  <rect x="60" y="90" width="3" height="120" rx="2" fill="url(#cyanGrad)" opacity="0.8"/>
+
+  <!-- ── Main content group ── -->
+  <g transform="translate(82, 0)">
+
+    <!-- "Hi, I'm Piyush 👋" headline with typewriter -->
+    <g class="headline">
+      <text x="0" y="148"
+            font-family="'Courier New', 'Lucida Console', monospace"
+            font-size="46"
+            font-weight="700"
+            letter-spacing="-0.5"
+            fill="url(#textGrad)">
+        Hi, I'm Piyush 👋
+      </text>
+    </g>
+
+    <!-- Blinking cursor -->
+    <text class="cursor" x="473" y="148"
+          font-family="'Courier New', monospace"
+          font-size="46"
+          font-weight="700"
+          fill="#06b6d4">|</text>
+
+    <!-- Subtitle -->
+    <text class="subtitle" x="2" y="188"
+          font-family="'Courier New', 'Lucida Console', monospace"
+          font-size="16.5"
+          font-weight="400"
+          letter-spacing="1.5"
+          fill="#94a3b8">
+      Building intelligent iOS apps  ·  BTech CSE AI/ML
+    </text>
+
+    <!-- Badge row -->
+    <g class="badge-row" transform="translate(0, 218)">
+      <!-- Swift badge -->
+      <rect x="0" y="0" width="72" height="22" rx="4" fill="#FA7343" opacity="0.9"/>
+      <text x="36" y="14.5" font-family="'Courier New', monospace" font-size="10" font-weight="700"
+            fill="white" text-anchor="middle" letter-spacing="0.5">Swift</text>
+
+      <!-- Python badge -->
+      <rect x="80" y="0" width="72" height="22" rx="4" fill="#3572A5" opacity="0.9"/>
+      <text x="116" y="14.5" font-family="'Courier New', monospace" font-size="10" font-weight="700"
+            fill="white" text-anchor="middle" letter-spacing="0.5">Python</text>
+
+      <!-- iOS badge -->
+      <rect x="160" y="0" width="60" height="22" rx="4" fill="#1c1c2e" opacity="1"/>
+      <rect x="160" y="0" width="60" height="22" rx="4" fill="none" stroke="#7c3aed" stroke-width="1"/>
+      <text x="190" y="14.5" font-family="'Courier New', monospace" font-size="10" font-weight="700"
+            fill="#a78bfa" text-anchor="middle" letter-spacing="0.5">iOS</text>
+
+      <!-- AI/ML badge -->
+      <rect x="228" y="0" width="60" height="22" rx="4" fill="#1c1c2e" opacity="1"/>
+      <rect x="228" y="0" width="60" height="22" rx="4" fill="none" stroke="#06b6d4" stroke-width="1"/>
+      <text x="258" y="14.5" font-family="'Courier New', monospace" font-size="10" font-weight="700"
+            fill="#06b6d4" text-anchor="middle" letter-spacing="0.5">AI/ML</text>
+    </g>
+
+  </g>
+
+  <!-- ── Shimmer pass over entire banner ── -->
+  <g clip-path="url(#bannerClip)" opacity="0.04">
+    <rect width="200" height="300" fill="white">
+      <animate attributeName="x" from="-200" to="1100" dur="4s" repeatCount="indefinite" begin="3s"/>
+    </rect>
+  </g>
+
+</svg>

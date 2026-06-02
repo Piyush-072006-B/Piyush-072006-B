@@ -1,13 +1,13 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: 5-FIX PASS — DONE. All placeholders resolved. README complete.
+> Last updated: DIVIDER PASS — DONE. 10 `---` dividers replaced with capsule-render gradient bars.
 
 ---
 
 ## ✅ COMPLETED
 
 - `HANDOFF.md` — always current.
-- `README.md` — **v3.2 (5-fix pass)**. All 5 targeted fixes applied:
+- `README.md` — **v3.3 (divider pass)**. 10 standalone `---` dividers replaced with `capsule-render type=rect` gradient bars (`0d1117 → 4c1d95 → 6d28d9 → 4c1d95 → 0d1117`, height=2). Fenced code block interior untouched. All 10 were decorative — none were structural.
   - Fix 1: Typing SVG trimmed to 2 lines (`AI/ML Engineer in the Making` + `B.Tech CSE (AI/ML) • Building Real Systems`). BLING + iOS lines removed.
   - Fix 2: Broken `github-readme-stats.vercel.app` cards DELETED. Replaced with `github-profile-summary-cards.vercel.app` (`profile-details`, `repos-per-language`, `most-commit-language`) — more reliable renderer for low-activity accounts.
   - Fix 3: Plain text contact line REPLACED with three shields.io badge-image links. Email and LinkedIn **fully resolved** — no more placeholders.

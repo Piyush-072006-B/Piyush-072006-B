@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=580&height=45&lines=AI%2FML+Engineer+in+the+Making;B.Tech+CSE+(AI%2FML)+%E2%80%A2+Building+Real+Systems" />
 </p>
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 <div align="center">
 
@@ -17,7 +17,7 @@
 
 </div>
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 ## Stack
 
@@ -29,11 +29,11 @@
   <sub>NetworkX · SHAP · Isolation Forest · CoreML · SwiftUI · WebSockets · Kafka · Vite</sub>
 </p>
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 ## Systems
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 **[BLING — Adversarial Financial Graph Topology Engine](https://github.com/Piyush-072006-B/bling-redteam)**
 *Python · FastAPI · Apache Kafka · NetworkX · Docker · Redis · PostgreSQL · React · Vite · WebSocket*
@@ -49,7 +49,7 @@ gen-0 topologies across all 7 fraud pattern families.**
 Safeguarded: no automatic model updates. Human investigators validate every exported
 pattern before it touches production logic.
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 **[MoodNest — iOS Mental Wellness Tracker](https://github.com/Piyush-072006-B/MoodNest-7.2F2)**
 *Swift · SwiftUI · iOS · Xcode*
@@ -62,11 +62,11 @@ Ships on iOS and was built to solve a real problem:
 most mood apps are either too clinical or too cluttered.
 MoodNest is neither.
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 *Also: [ToDoApp](https://github.com/Piyush-072006-B/ToDoApp) · [Nectar](https://github.com/Piyush-072006-B/Nectar) · [PatsApp](https://github.com/Piyush-072006-B/PatsApp) · [Grocery-List](https://github.com/Piyush-072006-B/Grocery-List)*
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 ## Currently
 
@@ -79,7 +79,7 @@ MoodNest is neither.
 →  Reading: transformer architectures · adversarial ML · graph theory
 ```
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 ## Signals
 
@@ -99,11 +99,11 @@ MoodNest is neither.
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Piyush-072006-B&bg_color=0d1117&color=a78bfa&line=7c3aed&point=c4b5fd&hide_border=true&area=true&area_color=2d1f6e&custom_title=Contribution%20Graph"/>
 </p>
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 The through-line in what I build is making hidden structure visible — fraud patterns hiding inside clean transaction graphs, emotional patterns hiding in daily behavior. I build the infrastructure that makes intelligence legible, not just functional. Adversarial and mobile. Knowing how systems break makes me better at building ones that don't.
 
----
+<p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
 
 <p align="center">
   <a href="mailto:piyush34305@gmail.com">

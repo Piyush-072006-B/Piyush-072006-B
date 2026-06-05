@@ -1,13 +1,13 @@
 # 🔁 Project Handoff File
 > Auto-maintained by agent. Delete this file when project is complete.
-> Last updated: SIGNALS PASS — DONE. Language cards resized + recolored to nord_dark.
+> Last updated: DIVIDER PASS — DONE. 10 `---` dividers replaced with capsule-render gradient bars.
 
 ---
 
 ## ✅ COMPLETED
 
 - `HANDOFF.md` — always current.
-- `README.md` — **v3.4 (Signals pass)**. Language cards: height 160em→130em, `card_width=280` added. All 3 summary cards: `theme=github_dark` → `theme=nord_dark` (blue-purple tones match a78bfa palette). `&nbsp;` spacer between language cards removed (single space).
+- `README.md` — **v3.3 (divider pass)**. 10 standalone `---` dividers replaced with `capsule-render type=rect` gradient bars (`0d1117 → 4c1d95 → 6d28d9 → 4c1d95 → 0d1117`, height=2). Fenced code block interior untouched. All 10 were decorative — none were structural.
   - Fix 1: Typing SVG trimmed to 2 lines (`AI/ML Engineer in the Making` + `B.Tech CSE (AI/ML) • Building Real Systems`). BLING + iOS lines removed.
   - Fix 2: Broken `github-readme-stats.vercel.app` cards DELETED. Replaced with `github-profile-summary-cards.vercel.app` (`profile-details`, `repos-per-language`, `most-commit-language`) — more reliable renderer for low-activity accounts.
   - Fix 3: Plain text contact line REPLACED with three shields.io badge-image links. Email and LinkedIn **fully resolved** — no more placeholders.

@@ -84,12 +84,12 @@ MoodNest is neither.
 ## Signals
 
 <p align="center">
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Piyush-072006-B&theme=nord_dark"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Piyush-072006-B&theme=github_dark"/>
 </p>
 <p align="center">
-  <img height="130em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Piyush-072006-B&theme=nord_dark&card_width=280"/>
-  
-  <img height="130em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Piyush-072006-B&theme=nord_dark&card_width=280"/>
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Piyush-072006-B&theme=github_dark"/>
+  &nbsp;
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Piyush-072006-B&theme=github_dark"/>
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Piyush-072006-B&theme=transparent&hide_border=true&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=8b8b9b&dates=8b8b9b&currStreakNum=c4b5fd&sideNums=c4b5fd"/>

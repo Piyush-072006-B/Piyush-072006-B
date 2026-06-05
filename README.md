@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Piyush Pal — AI/ML Engineer"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:0d1117&height=200&section=header&text=Piyush%20Pal&fontSize=72&fontColor=a78bfa&fontAlignY=38&desc=Building%20at%20the%20edge%20of%20AI&descSize=16&descColor=8b8b9b&descAlignY=60&animation=fadeIn"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=580&height=45&lines=AI%2FML+Engineer+in+the+Making;B.Tech+CSE+(AI%2FML)+%E2%80%A2+Building+Real+Systems" />
 </p>
 
 <p align="center"><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,40:4c1d95,50:6d28d9,60:4c1d95,100:0d1117&height=2&section=header"/></p>
